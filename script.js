@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Código existente para animar las tarjetas del menú
     const cards = document.querySelectorAll('.card');
     const observer = new IntersectionObserver(
       (entries) => {
@@ -13,6 +14,30 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     cards.forEach((card) => {
       observer.observe(card);
+    });
+  
+    // Toggle de la sección Ubicación
+    const btnUbicacion = document.getElementById('btn-ubicacion');
+    btnUbicacion.addEventListener('click', function () {
+      const ubicacionSection = document.getElementById('ubicacion');
+      if (ubicacionSection.style.display === "none" || ubicacionSection.style.display === "") {
+        ubicacionSection.style.display = "block";
+        ubicacionSection.scrollIntoView({ behavior: "smooth" });
+      } else {
+        ubicacionSection.style.display = "none";
+      }
+    });
+  
+    // Toggle de la sección Sobre Nosotros
+    const btnSobreNosotros = document.getElementById('btn-sobre-nosotros');
+    btnSobreNosotros.addEventListener('click', function () {
+      const sobreNosotrosSection = document.getElementById('sobre-nosotros');
+      if (sobreNosotrosSection.style.display === "none" || sobreNosotrosSection.style.display === "") {
+        sobreNosotrosSection.style.display = "block";
+        sobreNosotrosSection.scrollIntoView({ behavior: "smooth" });
+      } else {
+        sobreNosotrosSection.style.display = "none";
+      }
     });
   });
   

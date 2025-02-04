@@ -10,17 +10,73 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <img src="logo.jpg" alt="Logo Casa Angel Burger" class="logo" />
+<header>
+    <div class="header-content">
+      <button id="btn-sobre-nosotros" class="header-btn">Sobre Nosotros</button>
+      <img src="logo.jpg" alt="Logo Casa Angel Burger" class="logo" />
+      <button id="btn-ubicacion" class="header-btn">Ubicación</button>
+    </div>
   </header>
 
+ 
   <!-- Sección Hero -->
   <section class="hero">
     <h1>Bienvenidos a Casa Angel Burger</h1>
     <p>Déjate sorprender por nuestros sabores auténticos</p>
-    <p><strong>📍 Girardota, Antioquia</strong></p>
+    <p><strong>Pide aquí 👉🏻 <a href="https://api.whatsapp.com/send/?phone=573246180869&text&type=phone_number&app_absent=0">WhatsApp</a></strong></p>
     <p><strong>🛵 3246180869</strong></p>
     <a href="#menu" class="btn">Ver Menú</a>
+  </section>
+
+    <!-- Línea separadora con gradiente animado -->
+<div class="separator"></div>
+
+  <!-- Sección Sobre Nosotros (oculta inicialmente) -->
+  <section id="sobre-nosotros">
+    <h2>Sobre Nosotros</h2>
+    <div class="cards-sobre-nosotros">
+      <!-- Tarjeta Misión -->
+      <div class="card">
+        <!-- Puedes reemplazar "mision.jpg" por la imagen que desees -->
+        <img src="mision.jpg" alt="Misión" />
+        <div class="card-content">
+          <h3>Misión</h3>
+          <p>Nuestra misión es deleitar a nuestros clientes con hamburguesas de sabor auténtico y calidad insuperable, combinando ingredientes frescos y recetas tradicionales que hacen de cada visita una experiencia única.</p>
+        </div>
+      </div>
+      <!-- Tarjeta Visión -->
+      <div class="card">
+        <!-- Puedes reemplazar "vision.jpg" por la imagen que desees -->
+        <img src="vision.jpg" alt="Visión" />
+        <div class="card-content">
+          <h3>Visión</h3>
+          <p>Nuestra visión es ser reconocidos como el referente gastronómico en Girardota, expandiendo nuestro compromiso con la excelencia y la innovación, mientras honramos nuestras raíces y valores tradicionales.</p>
+        </div>
+      </div>
+      <!-- Tarjeta Valores -->
+      <div class="card">
+        <!-- Puedes reemplazar "valores.jpg" por la imagen que desees -->
+        <img src="valores.jpg" alt="Valores" />
+        <div class="card-content">
+          <h3>Valores</h3>
+          <p>Nos regimos por valores de integridad, pasión y compromiso, asegurando que cada hamburguesa sea preparada con esmero y dedicación, y que cada cliente se sienta parte de nuestra familia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Ubicación (oculta inicialmente) -->
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Cl. 10c #10-64, Girardota, Antioquia, Colombia</p>
+    <iframe 
+      src="https://maps.google.com/maps?q=Cl.%2010c%20%2310-64%2C%20Girardota%2C%20Antioquia%2C%20Colombia&hl=es&z=16&output=embed" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
   </section>
 
   <!-- Sección Menú -->
